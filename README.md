@@ -35,7 +35,7 @@
 ![](./Images/3.png)
 
 ## Pipeline Jobs Metrics
-* Jobs
+* Jobs ( Training Step → Evaluate Step )
 ![](./Images/4.png)
 
 * Metrics
