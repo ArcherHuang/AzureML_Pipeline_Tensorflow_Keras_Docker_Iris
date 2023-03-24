@@ -29,8 +29,10 @@
 ![](./Images/3.png)
 
 ## Pipeline Jobs Metrics
+* Jobs
 ![](./Images/4.png)
 
+* Metrics
 ![](./Images/5.png)
 ![](./Images/6.png)
 
