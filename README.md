@@ -1,5 +1,6 @@
 # AzureML Using Pipeline, Tensorflow, Keras and Docker with Iris as an Example
 ## Contents
+- [Feature](#feature)
 - [The file structure in the Github repository](#the-file-structure-in-the-github-repository)
 - [Models](#models)
 - [Pipeline Jobs Metrics](#pipeline-jobs-metrics)
@@ -7,6 +8,13 @@
   - Metrics
 - [Blob](#blob)
 - [License](#license)
+
+## Feature
+* Send the CSV files from the edge to `Azure Blob`.
+* Connect `AzureML Datastore` to `Azure Blob`.
+* Read CSV data from `AzureML Datastore` and create corresponding `Dataset` object.
+* Create `Azure ML PipelineData` objects to store intermediate data generated in the training and evaluation steps of the pipeline.
+* Create two steps, Training Step and Evaluate Step, through `Azure ML Pipeline`. The `Training Step` is responsible for training the model and storing the generated model in the `Azure ML Models Assets` and `Azure Blob`. The `Evaluate Step` is responsible for evaluating the performance of the model using test data.
 
 ## The file structure in the Github repository
 ```
