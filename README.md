@@ -1,4 +1,10 @@
 # AzureML Pipeline Iris Tensorflow Keras
+## Contents
+- [The file structure in the Github repository](#the-file-structure-in-the-github-repository)
+- [Models](#models)
+- [Pipeline Jobs Metrics](#pipeline-jobs-metrics)
+- [Blob](#blob)
+- [License](#license)
 
 ## The file structure in the Github repository
 ```
