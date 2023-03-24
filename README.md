@@ -15,6 +15,12 @@
 │   │   ├── evaluate.py
 │   │   └── training.py
 │   └── run_iris_pipeline.ipynb
+├── Blob
+│   └── UploadFiles
+│       ├── Log
+│       │   └── L20230218.log
+│       ├── app.py
+│       └── requirements.txt
 ├── Datasets
 │   ├── test
 │   │   └── iris_test.csv
