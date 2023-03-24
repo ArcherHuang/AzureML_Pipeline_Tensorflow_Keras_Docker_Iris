@@ -33,8 +33,10 @@
 ![](./Images/4.png)
 
 * Metrics
-![](./Images/5.png)
-![](./Images/6.png)
+  * Training Step
+    ![](./Images/5.png)
+  * Evaluate Step
+    ![](./Images/6.png)
 
 ## Blob
 ![](./Images/7.png)
