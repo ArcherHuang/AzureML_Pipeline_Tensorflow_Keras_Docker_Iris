@@ -1,5 +1,20 @@
 # AzureML Pipeline Iris Tensorflow Keras
 
+## The file structure in the Github repository
+```
+├── AzureML
+│   ├── pipeline-python
+│   │   ├── evaluate.py
+│   │   └── training.py
+│   └── run_iris_pipeline.ipynb
+├── Datasets
+│   ├── test
+│   │   └── iris_test.csv
+│   └── training
+│       └── iris_training.csv
+├── LICENSE
+└── README.md
+```
 ## Models
 ![](./Images/1.png)
 ![](./Images/2.png)
