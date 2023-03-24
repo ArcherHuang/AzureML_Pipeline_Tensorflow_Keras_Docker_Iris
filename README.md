@@ -4,7 +4,7 @@
 - [Models](#models)
 - [Pipeline Jobs Metrics](#pipeline-jobs-metrics)
   - Jobs
-  - [Metrics]()
+  - Metrics
 - [Blob](#blob)
 - [License](#license)
 
