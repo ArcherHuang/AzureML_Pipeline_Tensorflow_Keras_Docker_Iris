@@ -1,4 +1,4 @@
-# AzureML Pipeline Tensorflow Keras - Iris Sample
+# AzureML Using Pipeline, Tensorflow and Keras with Iris as an Example
 ## Contents
 - [The file structure in the Github repository](#the-file-structure-in-the-github-repository)
 - [Models](#models)
