@@ -25,7 +25,7 @@
 │   │   └── training.py
 │   └── run_iris_pipeline.ipynb
 ├── Blob
-│   ├── DeleteFiles
+│   ├── ListDeleteFiles
 │   │   ├── app.py
 │   │   └── requirements.txt
 │   └── UploadFiles
