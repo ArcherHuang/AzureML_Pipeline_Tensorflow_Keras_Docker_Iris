@@ -24,7 +24,7 @@
 │   │   ├── evaluate.py
 │   │   └── training.py
 │   └── run_iris_pipeline.ipynb
-├── Blob
+├── AzureBlob
 │   ├── ListDeleteFiles
 │   │   ├── app.py
 │   │   └── requirements.txt
