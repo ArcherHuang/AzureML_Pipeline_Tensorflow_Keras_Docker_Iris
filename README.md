@@ -41,8 +41,10 @@
 
 * Metrics
   * Training Step
+    ![](./Images/10.png)
     ![](./Images/5.png)
   * Evaluate Step
+    ![](./Images/11.png)
     ![](./Images/6.png)
 
 ## Models
