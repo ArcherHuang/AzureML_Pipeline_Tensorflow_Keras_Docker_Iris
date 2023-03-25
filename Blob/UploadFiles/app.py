@@ -6,14 +6,18 @@ load_dotenv()
 BLOB_CONNECTION_STRING = os.getenv("BLOB_CONNECTION_STRING")
 BLOB_CONTAINER_NAME = os.getenv("BLOB_CONTAINER_NAME")
 
-parent = "Log"
-path = f"./{parent}/"
-file_name = "L20230218.log"
-
-blob = BlobClient.from_connection_string(conn_str = BLOB_CONNECTION_STRING, container_name = BLOB_CONTAINER_NAME, blob_name = f"{parent}/" + file_name)
-with open(f"{path}{file_name}", "rb") as data:
-    try:
-        blob_client = blob.upload_blob(data, overwrite=True)
-        print(f"blob_client: {blob_client}")
-    except Exception as ex:
-        print(f"Exception: {ex}")
+for dirpath, dirnames, filenames in os.walk("../../Datasets"):
+  for filename in filenames:
+    if not filename == '.DS_Store':
+        parent_path = dirpath.replace('../../Datasets/', '')
+        print(f"dirpath: {parent_path}, filename: {filename}")
+        try:
+            blob = BlobClient.from_connection_string(
+                conn_str = BLOB_CONNECTION_STRING,
+                container_name = BLOB_CONTAINER_NAME,
+                blob_name = f"{parent_path}/{filename}"
+            )
+            with open(f"{dirpath}/{filename}", "rb") as data:
+                blob.upload_blob(data, overwrite=True)
+        except Exception as ex:
+            print(f"Exception: {ex}")

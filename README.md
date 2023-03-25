@@ -2,10 +2,10 @@
 ## Contents
 - [Feature](#feature)
 - [The file structure in the Github repository](#the-file-structure-in-the-github-repository)
-- [Models](#models)
 - [Pipeline Jobs Metrics](#pipeline-jobs-metrics)
   - Jobs
   - Metrics
+- [Models](#models)
 - [Blob](#blob)
 - [License](#license)
 
@@ -25,8 +25,6 @@
 │   └── run_iris_pipeline.ipynb
 ├── Blob
 │   └── UploadFiles
-│       ├── Log
-│       │   └── L20230218.log
 │       ├── app.py
 │       └── requirements.txt
 ├── Datasets
@@ -37,11 +35,6 @@
 ├── LICENSE
 └── README.md
 ```
-## Models
-![](./Images/1.png)
-![](./Images/2.png)
-![](./Images/3.png)
-
 ## Pipeline Jobs Metrics
 * Jobs ( Training Step → Evaluate Step )
 ![](./Images/4.png)
@@ -51,6 +44,11 @@
     ![](./Images/5.png)
   * Evaluate Step
     ![](./Images/6.png)
+
+## Models
+![](./Images/1.png)
+![](./Images/2.png)
+![](./Images/3.png)
 
 ## Blob
 ![](./Images/7.png)
