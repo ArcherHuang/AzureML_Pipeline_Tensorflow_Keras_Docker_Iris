@@ -2,6 +2,7 @@
 ## Contents
 - [Feature](#feature)
 - [The file structure in the Github repository](#the-file-structure-in-the-github-repository)
+- [Azure Cloud service used](#azure-cloud-service-used)
 - [Pipeline Jobs Metrics](#pipeline-jobs-metrics)
   - Jobs
   - Metrics
@@ -38,6 +39,13 @@
 ├── LICENSE
 └── README.md
 ```
+
+## Azure Cloud service used
+* [Azure Machine Learning Studio](https://learn.microsoft.com/zh-tw/azure/machine-learning/overview-what-is-azure-machine-learning)
+* [Azure VM](https://azure.microsoft.com/zh-tw/pricing/details/virtual-machines/series/)
+* [Azure Container Registry](https://azure.microsoft.com/zh-tw/products/container-registry)
+* [Azure Storage Account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+
 ## Pipeline Jobs Metrics
 * Jobs ( Training Step → Evaluate Step )
 ![](./Images/4.png)
