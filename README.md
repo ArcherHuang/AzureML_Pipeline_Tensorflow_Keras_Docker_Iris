@@ -19,11 +19,6 @@
 
 ## The file structure in the Github repository
 ```
-├── AzureML
-│   ├── pipeline-python
-│   │   ├── evaluate.py
-│   │   └── training.py
-│   └── run_iris_pipeline.ipynb
 ├── AzureBlob
 │   ├── ListDeleteFiles
 │   │   ├── app.py
@@ -31,6 +26,11 @@
 │   └── UploadFiles
 │       ├── app.py
 │       └── requirements.txt
+├── AzureML
+│   ├── pipeline-python
+│   │   ├── evaluate.py
+│   │   └── training.py
+│   └── run_iris_pipeline.ipynb
 ├── Datasets
 │   ├── test
 │   │   └── iris_test.csv
