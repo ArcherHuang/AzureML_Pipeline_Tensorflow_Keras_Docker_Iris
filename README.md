@@ -47,7 +47,7 @@
 * [Azure Storage Account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 
 ## Pipeline Jobs Metrics
-* Jobs ( Training Step → Evaluate Step )
+* Jobs ( ① Training Step → ② Evaluate Step )
 ![](./Images/4.png)
 
 * Metrics
