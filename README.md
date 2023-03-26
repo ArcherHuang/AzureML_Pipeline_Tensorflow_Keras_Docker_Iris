@@ -69,4 +69,4 @@
 ![](./Images/9.png)
 
 ## License
-Examples of Azure Digital Twins is licensed under the [MIT](./LICENSE) license.
+Examples of AzureML is licensed under the [MIT](./LICENSE) license.
