@@ -18,7 +18,6 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--blob_datastore_name", type=str, help="output path")
 parser.add_argument("--blob_container_name", type=str, help="output path")
 parser.add_argument("--blob_account_name", type=str, help="output path")
-parser.add_argument("--blob_account_key", type=str, help="output path")
 parser.add_argument("--output_path", type=str, help="output path")
 parser.add_argument("--dataset_training_path", type=str, help="training dataset path")
 parser.add_argument("--dataset_test_path", type=str, help="test dataset path")
@@ -28,7 +27,6 @@ args = parser.parse_args()
 print(f"Argument blob_datastore_name: {args.blob_datastore_name}")
 print(f"Argument blob_container_name: {args.blob_container_name}")
 print(f"Argument blob_account_name: {args.blob_account_name}")
-print(f"Argument blob_account_key: {args.blob_account_key}")
 print(f"Argument output_path: {args.output_path}")
 print(f"Argument dataset_training_path: {args.dataset_training_path}")
 print(f"Argument dataset_test_path: {args.dataset_test_path}")
@@ -38,12 +36,16 @@ print(f"Argument output_folder: {args.output_folder}")
 run = Run.get_context()
 ws = run.experiment.workspace
 
+# 取得 Secret
+secret_blob_account_key = run.get_secret(name="blob-account-key")
+print(f"secret_blob_account_key: {secret_blob_account_key}")
+
 # 設定 Datastore
 blob_datastore = Datastore.register_azure_blob_container(workspace=ws, 
                                                          datastore_name=args.blob_datastore_name, 
                                                          container_name=args.blob_container_name, 
                                                          account_name=args.blob_account_name,
-                                                         account_key=args.blob_account_key)
+                                                         account_key=secret_blob_account_key)
 
 # 設定隨機種子，以確保每次執行結果相同
 np.random.seed(0)
